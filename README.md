@@ -2,7 +2,7 @@
 
 **Tema:** Analiza skupa podataka 'Global Fashion Retail Sales'
 
-**Autori:** Milica [indeks] i Saška [indeks]
+**Autori:** Milica Belić IN11-2022 i Saška Radovanović IN8-2022
 
 ## Opis skupa podataka
 
@@ -10,8 +10,8 @@ Podaci koji su uzeti u obzir tokom izrade projekta potiču sa sajta Kaggle. Konk
 
 - 35 prodavnica u 7 zemalja (SAD, Kina, Nemačka, UK, Francuska, Španija, Portugal)
 - 1.6+ miliona kupaca
-- Preko 6.4 miliona transakcija (kupovine i povrati)
-- ~2.000 proizvoda, sa opisima na 6 jezika
+- Preko 6.4 miliona transakcija
+- ~2.000 proizvoda
 - ~200 zaposlenih
 - ~50 promotivnih kampanja (popusti)
 
@@ -37,18 +37,15 @@ Implementacioni deo projekta (skripta za uvoz podataka) se nalazi u glavnom dire
 
 Detaljan kod i rezultati svakog upita nalaze se u pripadajućim direktorijumima:
 
-| Autor | Direktorijum |
-|---|---|
+| Autor | Direktorijum        |
+|---|---------------------|
 | Milica | [milica/](./milica) |
-| Saška | [saska/](./saska) |
+| Saška | [saska/](./saška)   |
 
 ## Statistika i grafici
 
-_[Ovde ide grafik broja pregledanih dokumenata pre/posle indeksiranja, i grafik vremena trajanja upita pre/posle — videti performanse_template.xlsx]_
 
-![Broj dokumenata - pre i posle](./grafici/broj_dokumenata.png)
 
-![Vreme izvršavanja - pre i posle](./grafici/vreme_izvrsavanja.png)
 
 ---
 
@@ -117,7 +114,7 @@ Pregled izvornih podataka (CSV fajlovi) i njihovih polja, pre prebacivanja u Mon
 • subCategory – podkategorija na koju se odnosi
 ```
 
-> Napomena: discounts.csv nema jedinstveni identifikator — veza sa transakcijama je po vrednosti popusta i datumu, ne po FK.
+> Napomena: discounts.csv nema jedinstveni identifikator.
 
 #### TRANSACTIONS
 
@@ -152,8 +149,6 @@ TRANSACTIONS.storeId      ->  STORES.storeId
 TRANSACTIONS.employeeId   ->  EMPLOYEES.employeeId
 EMPLOYEES.storeId         ->  STORES.storeId
 ```
-
-`DISCOUNTS` nema formalnu FK vezu — povezuje se sa transakcijama posredno, preko vrednosti popusta i vremenskog perioda važenja kampanje.
 
 ### Logički model u MongoDB (ugnježdeni dokument)
 
