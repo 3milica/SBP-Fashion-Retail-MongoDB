@@ -65,6 +65,7 @@ class FashionRetailParser:
                 self._employees[eid] = {
                     "employee_id": eid,
                     "name": row["Name"],
+                    "position": row["Position"],
                     "store_id": int(row["Store ID"]),
                 }
 
