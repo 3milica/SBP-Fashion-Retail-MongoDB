@@ -19,16 +19,16 @@ Sve zajedno podaci su raspoređeni na 6 kolekcija dokumenata.
 
 ## Upiti
 
-1. Za svaki mesec pronaći zemlju sa najvećim prihodom i unutar nje prodavnicu koja je najviše doprinela.
-2. Za svaku kategoriju i zemlju odrediti prosečnu maržu i koji mesec u godini generiše najveći prihod.
-3. Za transakcije veće od 200, pronaći kupce koji su kupovali u više od jedne zemlje, u kojim zemljama kupuju i koliko troše po zemlji.
-4. Za svaku boju odrediti u kom kvartalu se najviše prodaje.
-5. Pronaći 10 kupaca sa najvećim ukupnim popustom (unit_price × quantity × discount) — ko je najviše iskoristio popuste.
-6. Za svaku prodavnicu odrediti koji meseci u prvoj i drugoj godini imaju najveći i najmanji prihod, i koji je mesečni prosek između godina.
-7. Za svaki proizvod koji je vraćan, odrediti stopu povrata i prosečnu cenu po kojoj je kupljen.
-8. Za svaki sat u danu odrediti koji payment method dominira i koliki prihod generiše, i u kojoj prodavnici taj payment method u tom satu ostvaruje najveći prihod.
-9. Za svakog zaposlenog odrediti u kom mesecu je ostvario najveći prihod i koliko je to odstupalo od njegovog godišnjeg proseka.
-10. Za top 5 kupaca odrediti omiljenu prodavnicu, omiljenu kategoriju, omiljenu boju i prosečan iznos transakcije.
+### Milica Belić
+1. Za transakcije veće od 200, pronaći kupce koji su kupovali u više od jedne zemlje, u kojim zemljama kupuju i koliko troše po zemlji.
+2. Za svaku boju odrediti u kom kvartalu se najviše prodaje.
+
+### Saška Radovanović
+1. Za svaku prodavnicu odrediti koji meseci u prvoj i drugoj godini imaju najveći i najmanji prihod, i koji je mesečni prosek između godina.
+2. Za svaki proizvod koji je vraćan, odrediti stopu povrata i prosečnu cenu po kojoj je kupljen.
+3. Za svaki sat u danu odrediti koji payment method dominira i koliki prihod generiše.
+4. Top 10 kupaca po ukupnom popustu (unit_price × quantity × discount) — ko je najviše iskoristio popuste.
+5. Za top 5 kupaca odrediti omiljenu prodavnicu, omiljenu kategoriju, omiljenu boju i prosečan iznos transakcije.
 
 ## Implementacija
 
@@ -37,10 +37,10 @@ Implementacioni deo projekta (skripta za uvoz podataka) se nalazi u glavnom dire
 
 Detaljan kod i rezultati svakog upita nalaze se u pripadajućim direktorijumima:
 
-| Autor | Direktorijum        |
-|---|---------------------|
-| Milica | [milica/](./milica) |
-| Saška | [saska/](./saška)   |
+| Autor | Direktorijum |
+|---|---|
+| Milica | [v1/queries/milica/](./v1/queries/milica) |
+| Saška | [v1/queries/saska/](./v1/queries/saska) |
 
 ## Statistika i grafici
 
